@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rss="http://purl.org/rss/1.0/"
+   xmlns="http://planet-fsw.lod2.eu/">
+  <rss:channel rdf:about="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=joindiaspora">
+    <dc:title>Diaspora Twitter Updates</dc:title>
+  </rss:channel>
+  <rss:channel rdf:about="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=onesocialweb">
+    <dc:title>OneSocialWeb Twitter Updates</dc:title>
+  </rss:channel>
+  <rss:channel rdf:about="http://diso-project.org/feed/">
+    <dc:title>Diso Project Feed</dc:title>
+  </rss:channel>
+  <rss:channel rdf:about="http://foocorp.org/projects/social/atom.xml">
+    <dc:title>FooCorp Feed</dc:title>
+  </rss:channel>
+  <rss:channel rdf:about="http://noserub.com/blog/feed/atom/">
+    <dc:title>Norerub Feed</dc:title>
+  </rss:channel>
+  <foaf:Group rdf:about="http://planet-fsw.lod2.eu/">
+    <dc:description>The mission of the Federated Social Web Incubator Group, part of the &lt;a href="http://www.w3.org/2005/Incubator/"&gt;Incubator Activity&lt;/a&gt;, is to provide a set of
+community-driven specifications and a test-case suite for a federated social web.&lt;/p&gt;</dc:description>
+    <foaf:made rdf:resource="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=joindiaspora"/>
+    <foaf:made rdf:resource="http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=onesocialweb"/>
+    <foaf:made rdf:resource="http://diso-project.org/feed/"/>
+    <foaf:made rdf:resource="http://foocorp.org/projects/social/atom.xml"/>
+    <foaf:made rdf:resource="http://noserub.com/blog/feed/atom/"/>
+    <foaf:made rdf:resource="http://projectdanube.org/feed/"/>
+    <foaf:name>Federated Social Web</foaf:name>
+  </foaf:Group>
+  <foaf:Document rdf:about="http://planet-fsw.lod2.eu/index.html">
+    <dc:description>...</dc:description>
+    <dc:title>Planet Federated Social Web</dc:title>
+    <foaf:primaryTopic rdf:resource="http://planet-fsw.lod2.eu/"/>
+  </foaf:Document>
+  <rss:channel rdf:about="http://projectdanube.org/feed/">
+    <dc:title>Project Danube Feed</dc:title>
+  </rss:channel>
+</rdf:RDF>
