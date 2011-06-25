@@ -31,6 +31,3 @@ spcms:
 	rm -rf foafpressapp/libraries/spcms
 	git status 2>/dev/null >/dev/null || hg clone https://sandbox-publisher-cms.googlecode.com/hg/ foafpressapp/libraries/spcms
 	hg status 2>/dev/null >/dev/null || git clone https://github.com/haschek/Sandbox-Publisher-CMS.git foafpressapp/libraries/spcms
-
-index:
-	rapper index.tt -i turtle -o rdfxml-abbrev >index.rdf
