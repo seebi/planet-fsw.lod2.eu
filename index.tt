@@ -7,12 +7,12 @@
 @prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix : <http://planet-fsw.lod2.eu/> .
 
-<http://planet-fsw.lod2.eu/index.html> a foaf:Document;
+<> a foaf:Document;
     foaf:primaryTopic <http://planet-fsw.lod2.eu/>;
     dc:description "...";
     content:encoded """
 <p>This community service is a merge of all the latest FSW related activities fetched from personal and project blogs as well as from twitter feeds.
-It is hosted by the <a href="http://aksw.org">AKSW research group</a>, supported by the <a href="http://lod2.eu">LOD2 project</a> and driven by <a href="http://foafpress.org">foafpress</a>.</p>
+It is hosted by the <a href="http://aksw.org">AKSW research group</a>, supported by the <a href="http://lod2.eu">LOD2 project</a> and driven by <a href="http://foafpress.org">Foafpress</a>.</p>
 <ul>
     <li>activity sources: <a href="http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/index.php?title=PlanetFSW">FSW wiki</a></li>
     <li>site sources: <a href="http://github.com/seebi/planet-fsw.lod2.eu">github</a></li>
