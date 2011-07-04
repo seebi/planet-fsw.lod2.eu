@@ -1,0 +1,60 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rss: <http://purl.org/rss/1.0/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix content: <http://purl.org/rss/1.0/modules/content/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix : <http://planet-fsw.lod2.eu/> .
+
+<> a foaf:Document;
+    foaf:primaryTopic <http://planet-fsw.lod2.eu/>;
+    dc:description "...";
+    content:encoded """
+<p>This community service is a merge of all the latest FSW related activities fetched from personal and project blogs as well as from twitter feeds.
+It is hosted by the <a href="http://aksw.org">AKSW research group</a>, supported by the <a href="http://lod2.eu">LOD2 project</a> and driven by <a href="http://foafpress.org">Foafpress</a>.</p>
+<ul>
+    <li>activity sources: <a href="http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/index.php?title=PlanetFSW">FSW wiki</a></li>
+    <li>site sources: <a href="http://github.com/seebi/planet-fsw.lod2.eu">github</a></li>
+    <li>site maintainer: <a href="http://sebastian.tramp.name">Sebastian Tramp</a></li>
+    <li>generation process details: soon</li>
+</ul>
+<p>Feel free to add your own data sources to the FSW wiki, to modify the site sources and send me pull requests, or to comment and discuss this page on the <a href="http://lists.w3.org/Archives/Public/public-xg-federatedsocialweb/">FSW mailing list</a>.</p>
+""";
+    dc:title "Planet Federated Social Web".
+
+<http://planet-fsw.lod2.eu/> a foaf:Group;
+    foaf:name "Federated Social Web";
+    dc:description """The mission of the Federated Social Web Incubator Group, part of the <a href="http://www.w3.org/2005/Incubator/">Incubator Activity</a>, is to provide a set of community-driven specifications and a test-case suite for a federated social web.</p>""";
+    foaf:interest
+        dbpedia:Distributed_social_network,
+        dbpedia:Social_web,
+        dbpedia:Social_network_service;
+    foaf:made
+        <http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=joindiaspora>,
+        <http://diso-project.org/feed/>,
+        <http://foocorp.org/projects/social/atom.xml>,
+        <http://noserub.com/blog/feed/atom/>,
+        <http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=onesocialweb>,
+        <http://projectdanube.org/feed/>.
+
+
+<http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=joindiaspora> a rss:channel ;
+    dc:title "Diaspora Twitter Updates" .
+
+<http://diso-project.org/feed/> a rss:channel ;
+    dc:title "Diso Project Feed" .
+
+<http://foocorp.org/projects/social/atom.xml> a rss:channel ;
+    dc:title "FooCorp Feed" .
+
+<http://noserub.com/blog/feed/atom/> a rss:channel ;
+    dc:title "Norerub Feed" .
+
+<http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=onesocialweb> a rss:channel ;
+    dc:title "OneSocialWeb Twitter Updates" .
+
+<http://projectdanube.org/feed/> a rss:channel ;
+    dc:title "Project Danube Feed" .
+
+
