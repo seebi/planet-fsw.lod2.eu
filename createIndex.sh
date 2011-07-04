@@ -21,6 +21,6 @@ echo " "
 
 for feed in $feeds
 do
-    echo "<$feed> a a rss:channel ."
+    echo "<$feed> a rss:channel; rdfs:label \"$feed\" . "
 done
 
