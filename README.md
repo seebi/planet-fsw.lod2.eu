@@ -5,3 +5,6 @@ fetched from personal and project blogs as well as from twitter feeds. It is
 hosted by the [AKSW research group](http://aksw.org), supported by the
 [LOD2 project](http://lod2.eu) and driven by [Foafpress](http://foafpress.org).
 
+To generate the index.tt (RDF turtle) file, run:
+    ./createIndex.sh >index.tt
+

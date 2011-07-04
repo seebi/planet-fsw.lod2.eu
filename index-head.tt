@@ -29,32 +29,7 @@ It is hosted by the <a href="http://aksw.org">AKSW research group</a>, supported
     foaf:interest
         dbpedia:Distributed_social_network,
         dbpedia:Social_web,
-        dbpedia:Social_network_service;
-    foaf:made
-        <http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=joindiaspora>,
-        <http://diso-project.org/feed/>,
-        <http://foocorp.org/projects/social/atom.xml>,
-        <http://noserub.com/blog/feed/atom/>,
-        <http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=onesocialweb>,
-        <http://projectdanube.org/feed/>.
+        dbpedia:Social_network_service.
 
-
-<http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=joindiaspora> a rss:channel ;
-    dc:title "Diaspora Twitter Updates" .
-
-<http://diso-project.org/feed/> a rss:channel ;
-    dc:title "Diso Project Feed" .
-
-<http://foocorp.org/projects/social/atom.xml> a rss:channel ;
-    dc:title "FooCorp Feed" .
-
-<http://noserub.com/blog/feed/atom/> a rss:channel ;
-    dc:title "Norerub Feed" .
-
-<http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=onesocialweb> a rss:channel ;
-    dc:title "OneSocialWeb Twitter Updates" .
-
-<http://projectdanube.org/feed/> a rss:channel ;
-    dc:title "Project Danube Feed" .
-
+# end of index-head.tt
 
