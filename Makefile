@@ -31,3 +31,10 @@ spcms:
 	rm -rf foafpressapp/libraries/spcms
 	git status 2>/dev/null >/dev/null || hg clone https://sandbox-publisher-cms.googlecode.com/hg/ foafpressapp/libraries/spcms
 	hg status 2>/dev/null >/dev/null || git clone https://github.com/haschek/Sandbox-Publisher-CMS.git foafpressapp/libraries/spcms
+
+index.tt:
+	rm index.tt
+	./generateIndex.sh index.tt
+	rm -rf cache/*
+	curl -s http://planet-fsw.lod2.eu/index.html -o /dev/null
+
