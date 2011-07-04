@@ -34,7 +34,7 @@ spcms:
 
 index.tt:
 	rm -rf index.tt
-	./generateIndex.sh index.tt
+	./createIndex.sh >index.tt
 	rm -rf cache/*
 	curl -s http://planet-fsw.lod2.eu/index.html -o /dev/null
 
